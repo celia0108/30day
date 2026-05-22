@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zen-Learning - 第一天：在咖啡廳</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary-fixed": "#29161d",
+                "error-container": "#ffdad6",
+                "surface-tint": "#3c6756",
+                "inverse-surface": "#30302f",
+                "secondary-container": "#fad7e1",
+                "surface-variant": "#e4e2e0",
+                "on-tertiary-fixed": "#1e1929",
+                "outline-variant": "#c0c8c3",
+                "tertiary": "#615b6e",
+                "primary-fixed-dim": "#a3d0bc",
+                "on-secondary": "#ffffff",
+                "primary": "#3c6756",
+                "surface-container-lowest": "#ffffff",
+                "surface-container": "#efedec",
+                "outline": "#717974",
+                "on-error-container": "#93000a",
+                "on-tertiary-fixed-variant": "#494455",
+                "primary-fixed": "#bfedd8",
+                "surface-container-low": "#f5f3f1",
+                "surface-dim": "#dbdad8",
+                "tertiary-container": "#e5dcf2",
+                "surface-container-high": "#eae8e6",
+                "secondary-fixed-dim": "#dfbec8",
+                "primary-container": "#bcead5",
+                "secondary": "#725760",
+                "inverse-on-surface": "#f2f0ee",
+                "surface-container-highest": "#e4e2e0",
+                "on-primary-fixed": "#002116",
+                "background": "#fbf9f7",
+                "on-surface-variant": "#414944",
+                "inverse-primary": "#a3d0bc",
+                "on-primary-fixed-variant": "#244e3f",
+                "secondary-fixed": "#fddae4",
+                "on-primary": "#ffffff",
+                "on-secondary-fixed-variant": "#584048",
+                "on-secondary-container": "#765b64",
+                "tertiary-fixed-dim": "#cbc3d8",
+                "surface": "#fbf9f7",
+                "tertiary-fixed": "#e8dff5",
+                "on-tertiary": "#ffffff",
+                "error": "#ba1a1a",
+                "on-error": "#ffffff",
+                "surface-bright": "#fbf9f7",
+                "on-surface": "#1b1c1b",
+                "on-tertiary-container": "#666072",
+                "on-background": "#1b1c1b",
+                "on-primary-container": "#416b5a"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-desktop": "64px",
+                "sm": "12px",
+                "xl": "80px",
+                "md": "24px",
+                "gutter": "24px",
+                "margin-mobile": "16px",
+                "base": "8px",
+                "xs": "4px",
+                "lg": "48px"
+        },
+        "fontFamily": {
+                "body-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "label-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "label-sm": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg-mobile": [
+                        "Plus Jakarta Sans"
+                ]
+        },
+        "fontSize": {
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1.4",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "40px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-md": [
+                        "28px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style data-stitch-cursor=""></style><style data-stitch-scroll-lock=""></style></head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-surface flex items-center justify-between px-gutter h-16 shadow-sm z-40">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">language</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">Zen-Learning</span>
+</div>
+<div class="w-8"></div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-5xl mx-auto px-gutter py-lg pb-32">
+<!-- Header & Back Navigation -->
+<div class="flex items-center gap-md mb-8">
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors text-on-surface-variant flex-shrink-0 active:scale-95">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div>
+<span class="inline-flex items-center rounded-full bg-secondary-container px-2.5 py-0.5 font-label-sm text-label-sm text-on-secondary-container mb-2">模組 1</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface md:block hidden">第一天：在咖啡廳</h1>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface block md:hidden">第一天：在咖啡廳</h1>
+</div>
+</div>
+<!-- Learning Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Entry 1 (Hidden State) -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_2px_10px_rgba(30,41,59,0.04)] border border-surface-container-low flex flex-col min-h-[160px] transition-all hover:shadow-[0_4px_16px_rgba(30,41,59,0.06)] group">
+<div class="flex justify-between items-start gap-4 flex-grow">
+<p class="font-headline-md text-headline-md text-on-surface pt-1 group-hover:text-primary transition-colors">A cup of coffee, please.</p>
+<button aria-label="Play audio" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-outline hover:bg-tertiary-container hover:text-on-tertiary-container hover:border-transparent transition-all mr-2">
+<span class="material-symbols-outlined">volume_up</span>
+</button><button aria-label="Show translation" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary hover:border-transparent transition-all">
+<span class="material-symbols-outlined">translate</span>
+</button>
+</div>
+</div>
+<!-- Entry 2 (Revealed State) -->
+<div class="bg-primary-container rounded-xl p-5 shadow-[0_2px_10px_rgba(30,41,59,0.04)] border-2 border-primary flex flex-col min-h-[160px] transition-all">
+<div class="flex justify-between items-start gap-4">
+<p class="font-headline-md text-headline-md text-on-primary-container pt-1">Do you have oat milk?</p>
+<button aria-label="Play audio" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-primary text-primary hover:bg-primary hover:text-on-primary hover:border-transparent transition-all mr-2">
+<span class="material-symbols-outlined">volume_up</span>
+</button><button aria-label="Hide translation" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">visibility</span>
+</button>
+</div>
+<div class="mt-auto pt-4 border-t border-primary-fixed">
+<p class="font-body-lg text-body-lg text-on-primary-container font-medium">你們有燕麥奶嗎？</p>
+<p class="font-label-md text-label-md text-primary mt-1">Nǐmen yǒu yànmài nǎi ma?</p>
+</div>
+</div>
+<!-- Entry 3 (Hidden State) -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_2px_10px_rgba(30,41,59,0.04)] border border-surface-container-low flex flex-col min-h-[160px] transition-all hover:shadow-[0_4px_16px_rgba(30,41,59,0.06)] group">
+<div class="flex justify-between items-start gap-4 flex-grow">
+<p class="font-headline-md text-headline-md text-on-surface pt-1 group-hover:text-primary transition-colors">Can I get this to go?</p>
+<button aria-label="Play audio" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-outline hover:bg-tertiary-container hover:text-on-tertiary-container hover:border-transparent transition-all mr-2">
+<span class="material-symbols-outlined">volume_up</span>
+</button><button aria-label="Show translation" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary hover:border-transparent transition-all">
+<span class="material-symbols-outlined">translate</span>
+</button>
+</div>
+</div>
+<!-- Entry 4 (Hidden State) -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_2px_10px_rgba(30,41,59,0.04)] border border-surface-container-low flex flex-col min-h-[160px] transition-all hover:shadow-[0_4px_16px_rgba(30,41,59,0.06)] group">
+<div class="flex justify-between items-start gap-4 flex-grow">
+<p class="font-headline-md text-headline-md text-on-surface pt-1 group-hover:text-primary transition-colors">Where is the restroom?</p>
+<button aria-label="Play audio" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-outline hover:bg-tertiary-container hover:text-on-tertiary-container hover:border-transparent transition-all mr-2">
+<span class="material-symbols-outlined">volume_up</span>
+</button><button aria-label="Show translation" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary hover:border-transparent transition-all">
+<span class="material-symbols-outlined">translate</span>
+</button>
+</div>
+</div>
+<!-- Entry 5 (Revealed State) -->
+<div class="bg-primary-container rounded-xl p-5 shadow-[0_2px_10px_rgba(30,41,59,0.04)] border-2 border-primary flex flex-col min-h-[160px] transition-all">
+<div class="flex justify-between items-start gap-4">
+<p class="font-headline-md text-headline-md text-on-primary-container pt-1">I would like a croissant.</p>
+<button aria-label="Play audio" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-primary text-primary hover:bg-primary hover:text-on-primary hover:border-transparent transition-all mr-2">
+<span class="material-symbols-outlined">volume_up</span>
+</button><button aria-label="Hide translation" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">visibility</span>
+</button>
+</div>
+<div class="mt-auto pt-4 border-t border-primary-fixed">
+<p class="font-body-lg text-body-lg text-on-primary-container font-medium">我想要一個牛角包。</p>
+<p class="font-label-md text-label-md text-primary mt-1">Wǒ xiǎng yào yīgè niújiǎo bāo.</p>
+</div>
+</div>
+<!-- Entry 6 (Hidden State) -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_2px_10px_rgba(30,41,59,0.04)] border border-surface-container-low flex flex-col min-h-[160px] transition-all hover:shadow-[0_4px_16px_rgba(30,41,59,0.06)] group">
+<div class="flex justify-between items-start gap-4 flex-grow">
+<p class="font-headline-md text-headline-md text-on-surface pt-1 group-hover:text-primary transition-colors">Is there free Wi-Fi here?</p>
+<button aria-label="Play audio" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-outline hover:bg-tertiary-container hover:text-on-tertiary-container hover:border-transparent transition-all mr-2">
+<span class="material-symbols-outlined">volume_up</span>
+</button><button aria-label="Show translation" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary hover:border-transparent transition-all">
+<span class="material-symbols-outlined">translate</span>
+</button>
+</div>
+</div>
+<!-- Entry 7 (Hidden State) -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_2px_10px_rgba(30,41,59,0.04)] border border-surface-container-low flex flex-col min-h-[160px] transition-all hover:shadow-[0_4px_16px_rgba(30,41,59,0.06)] group">
+<div class="flex justify-between items-start gap-4 flex-grow">
+<p class="font-headline-md text-headline-md text-on-surface pt-1 group-hover:text-primary transition-colors">Keep the change.</p>
+<button aria-label="Play audio" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-outline hover:bg-tertiary-container hover:text-on-tertiary-container hover:border-transparent transition-all mr-2">
+<span class="material-symbols-outlined">volume_up</span>
+</button><button aria-label="Show translation" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary hover:border-transparent transition-all">
+<span class="material-symbols-outlined">translate</span>
+</button>
+</div>
+</div>
+<!-- Entry 8 (Hidden State) -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_2px_10px_rgba(30,41,59,0.04)] border border-surface-container-low flex flex-col min-h-[160px] transition-all hover:shadow-[0_4px_16px_rgba(30,41,59,0.06)] group">
+<div class="flex justify-between items-start gap-4 flex-grow">
+<p class="font-headline-md text-headline-md text-on-surface pt-1 group-hover:text-primary transition-colors">What do you recommend?</p>
+<button aria-label="Play audio" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-outline hover:bg-tertiary-container hover:text-on-tertiary-container hover:border-transparent transition-all mr-2">
+<span class="material-symbols-outlined">volume_up</span>
+</button><button aria-label="Show translation" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary hover:border-transparent transition-all">
+<span class="material-symbols-outlined">translate</span>
+</button>
+</div>
+</div>
+<!-- Entry 9 (Revealed State) -->
+<div class="bg-primary-container rounded-xl p-5 shadow-[0_2px_10px_rgba(30,41,59,0.04)] border-2 border-primary flex flex-col min-h-[160px] transition-all">
+<div class="flex justify-between items-start gap-4">
+<p class="font-headline-md text-headline-md text-on-primary-container pt-1">Extra shot of espresso.</p>
+<button aria-label="Play audio" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-primary text-primary hover:bg-primary hover:text-on-primary hover:border-transparent transition-all mr-2">
+<span class="material-symbols-outlined">volume_up</span>
+</button><button aria-label="Hide translation" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">visibility</span>
+</button>
+</div>
+<div class="mt-auto pt-4 border-t border-primary-fixed">
+<p class="font-body-lg text-body-lg text-on-primary-container font-medium">多加一份濃縮。</p>
+<p class="font-label-md text-label-md text-primary mt-1">Duō jiā yī fèn nóngsuō.</p>
+</div>
+</div>
+<!-- Entry 10 (Hidden State) -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_2px_10px_rgba(30,41,59,0.04)] border border-surface-container-low flex flex-col min-h-[160px] transition-all hover:shadow-[0_4px_16px_rgba(30,41,59,0.06)] group">
+<div class="flex justify-between items-start gap-4 flex-grow">
+<p class="font-headline-md text-headline-md text-on-surface pt-1 group-hover:text-primary transition-colors">For here or to go?</p>
+<button aria-label="Play audio" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-outline hover:bg-tertiary-container hover:text-on-tertiary-container hover:border-transparent transition-all mr-2">
+<span class="material-symbols-outlined">volume_up</span>
+</button><button aria-label="Show translation" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary hover:border-transparent transition-all">
+<span class="material-symbols-outlined">translate</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Hidden on md+ as per layout rules) -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-xl shadow-[0_-2px_10px_rgba(0,0,0,0.04)] bg-surface-container-lowest flex justify-around items-center h-20 px-4 pb-safe md:hidden">
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-2xl px-6 py-1 active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-md text-label-md mt-1">首頁</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-1 hover:bg-surface-variant transition-all rounded-2xl active:scale-95 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+<span class="font-label-md text-label-md mt-1">設定</span>
+</button>
+</nav>
+</body></html>

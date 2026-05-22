@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Zen-Learning - 第一天：在咖啡廳</title>
+  
+  <!-- CSS Stylesheets -->
+  <link href="css/style.css" rel="stylesheet"/>
+  
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS Configuration & CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  
+  <!-- Page Script -->
+  <script src="js/scenario.js" defer></script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen">
+
+  <!-- TopAppBar -->
+  <header class="w-full top-0 sticky bg-surface flex items-center justify-between px-gutter h-16 shadow-sm z-40">
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">language</span>
+      <span class="font-headline-md text-headline-md font-bold text-primary">Zen-Learning</span>
+    </a>
+    <div class="w-8"></div>
+  </header>
+
+  <!-- Main Content Canvas -->
+  <main class="max-w-5xl mx-auto px-gutter py-lg pb-32">
+    <!-- Header & Back Navigation -->
+    <div class="flex items-center gap-md mb-8">
+      <button class="back-btn w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors text-on-surface-variant flex-shrink-0 active:scale-95">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </button>
+      <div>
+        <span class="module-label inline-flex items-center rounded-full bg-secondary-container px-2.5 py-0.5 font-label-sm text-label-sm text-on-secondary-container mb-2">模組 1</span>
+        <h1 class="scenario-title-desktop font-headline-lg text-headline-lg text-on-surface md:block hidden"></h1>
+        <h1 class="scenario-title-mobile font-headline-lg-mobile text-headline-lg-mobile text-on-surface block md:hidden"></h1>
+      </div>
+    </div>
+
+    <!-- Learning Content Grid (Populated by js/scenario.js) -->
+    <div id="dialogue-grid" class="grid grid-cols-1 md:grid-cols-2 gap-md">
+      <!-- Dynamic dialogue cards injected by JS -->
+    </div>
+  </main>
+
+  <!-- BottomNavBar (Hidden on md+ as per layout rules) -->
+  <nav class="fixed bottom-0 w-full z-50 rounded-t-xl shadow-[0_-2px_10px_rgba(0,0,0,0.04)] bg-surface-container-lowest flex justify-around items-center h-20 px-4 pb-safe md:hidden">
+    <a href="index.html" class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-1 hover:bg-surface-variant transition-all rounded-2xl active:scale-95 duration-200">
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+      <span class="font-label-md text-label-md mt-1">首頁</span>
+    </a>
+    <a href="settings.html" class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-1 hover:bg-surface-variant transition-all rounded-2xl active:scale-95 duration-200">
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+      <span class="font-label-md text-label-md mt-1">設定</span>
+    </a>
+  </nav>
+</body>
+</html>
